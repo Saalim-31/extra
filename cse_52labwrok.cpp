@@ -3,17 +3,20 @@
 int main()
 {
 	float num[10];
-{
+
 	int i;
 	for (i=0;i<10;i++)
-	printf("Enter number %d of the array:-  %d");
-	scanf("%f",num[i]);
+	{printf("Enter number %d  of the array:-  ",i);
+	scanf("%f",&num[i]);
 	}
 	{
 		int i;
 		for (i=0;i<10;i++)
-		printf("Element %d of the array is :-  %f",i,num[i]);
+		printf("\nElement %d of the array is :-  %f \n",i,num[i]);
 	}
 	return 0;
 }
+
+
+
 
