@@ -1,24 +1,24 @@
 #include<stdio.h>
 int main()
-{
-    int num[5];
-    int i;
-    int sum=0;
-    for (i=0;i<=4;i++)
-    {
-
-      printf(" Enter the value of %d element of your array \n",i);
-      scanf("%d",&num[i]);
-
+{int num[5];
+	int i;
+    int large;
+	for (i=0;i<=4;i++)
+	{
+	printf("Enter number %d of the array:-  ",i);
+	scanf("%d",&num[i]);
 }
-for (i=0;i<=4;i++)
-    {
+		for (i=0;i<=4;i++)
+        large=num[0];
+        {
 
-sum=sum+num[i];
+			if(large<num[i])
+			large=num[i];}
 
-
-    }
-
-      printf("  Sum of the given values of array is :-  %d",sum);
-    return 0;
+		}
+    printf("Largest among the given numbers is :-	 %d",large);
 }
+
+
+
+
